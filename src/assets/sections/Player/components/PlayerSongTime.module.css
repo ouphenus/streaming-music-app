@@ -1,0 +1,11 @@
+.content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.slider {
+	width: clamp(250px, 50%, 500px);
+}

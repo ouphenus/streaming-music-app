@@ -1,0 +1,44 @@
+.content {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	height: 100%;
+	width: 100%;
+	gap: 5px;
+	grid-template-areas:
+	"currentsong buttons volume"
+	"currentsong time volume";
+}
+
+.buttons { grid-area: buttons; }
+
+.time { grid-area: time; }
+
+.currentsong {
+	grid-area: currentsong;
+	margin-left: 10px;
+}
+
+.volume {
+	grid-area: volume;
+	margin-top: -8px;
+	padding-right: 20px;
+}
+
+@media (width <=800px) {
+	.volume, .currentsong {
+		visibility: hidden;
+		width: 0px;
+		height: 0px;
+	}
+
+	.content {
+		/* align-items: center	;
+		justify-content: center	;
+		align-content: center; */
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"buttons"
+		"time";
+	}
+}

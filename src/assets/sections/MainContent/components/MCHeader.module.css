@@ -1,0 +1,58 @@
+.content{
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 120px 1fr;
+	grid-template-rows: 4fr 1fr;
+	grid-template-areas:
+		"portrait title"
+		"portrait detail";
+	padding: 15px;
+	gap : 0px 15px;
+	align-items: end;
+}
+
+.portrait {
+	grid-area: portrait;
+	width: 120px;
+	border-radius: 5px;
+}
+
+.title {
+	grid-area: title;
+	font-size: 50px;
+	line-height: 1;
+	font-weight: var(--text-menu-weight);
+	color: var(--text-accent);
+}
+
+.detail {
+	grid-area: detail;
+	font-size: 15px;
+	font-weight: var(--text-menu-weight);
+}
+
+@media screen and (min-width: 1200px) {
+
+	.content {
+		grid-template-columns: 150px 1fr;
+	}
+	.title {
+		font-size: 70px;
+	}
+	.portrait {
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.content {
+		grid-template-columns: 80px 1fr;
+		grid-template-rows: 2fr 1fr;
+	}
+	.title {
+		font-size: 30px;
+	}
+	.portrait {
+		width: 80px;
+	}
+}

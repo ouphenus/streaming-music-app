@@ -1,0 +1,53 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	-webki-font-smoothing: antialiased;
+	line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	/* text-decoration: none;
+	color: inherit; */
+	all: unset;
+}
+
+/* 	Improve media defaults */
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+	margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}

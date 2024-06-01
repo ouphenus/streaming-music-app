@@ -1,0 +1,78 @@
+.content {
+	cursor: pointer;
+	height: 100%;
+}
+
+.rowSong {
+	transition: background-color 0.35s;
+}
+
+.rowSong:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.iconClock {
+	width: 18px;
+	height: 18px;
+	filter: brightness(0) saturate(100%) invert(86%) sepia(0%) saturate(5%) hue-rotate(184deg) brightness(80%) contrast(86%);
+}
+
+.itemSong {
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	grid-template-rows: 20px 1fr;
+	grid-template-areas:
+		"icon title"
+		"icon detail";
+	padding: 5px;
+	width: 100%;
+}
+
+.songIcon {
+	grid-area: icon;
+	width: 40px;
+	border-radius: 5px;
+}
+
+.songTitle {
+	grid-area: title;
+	font-size: 16px;
+	font-weight: var(--text-menu-weight);
+	color: var(--text-accent);
+}
+
+.songArtist {
+	grid-area: detail;
+	font-size: 14px;
+	height: 20px;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+thead tr th {
+	padding: 5px 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.columnContent {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.column {
+	padding: 10px;
+}
+
+.selected {
+	color: var(--text-selected);
+}
+
+@media (width <=600px) {
+	.albumCol {
+		display: none;
+	}
+}

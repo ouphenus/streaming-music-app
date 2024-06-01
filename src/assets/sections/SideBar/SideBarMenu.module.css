@@ -1,0 +1,31 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	gap: 10px;
+	margin: 10px;
+}
+
+.topmenu {
+	background-color: var(--background-base);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.libraryHeader{
+	height: 60px;
+}
+
+.playlist {
+	background-color: var(--background-base);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}

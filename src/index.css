@@ -1,0 +1,104 @@
+:root {
+	--player-height: 80px;
+	--background-base: #121212;
+	--background-highlight: #1a1a1a;
+	--text-base: #a7a7a7;
+	--text-subdued: #a7a7a7;
+	--text-menu-weight : 600;
+	--text-accent: #ffffff;
+	--text-selected: #1ed760;
+	--song-bg-color:#121212;
+}
+
+body {
+	background-color: black;
+	color: var(--text-base);
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 0;
+	font-style: normal;
+	-webkit-user-select: none;
+	user-select: none;
+	font-size: 14px;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+.textOverflow {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* ------------------------------------------------------------ */
+/* SET ALL SCROLL BARS */
+/* ------------------------------------------------------------ */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	/* border-radius: 10px; */
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+/* ------------------------------------------------------------ */
+/* SET ALL INPUT RANGE */
+/* ------------------------------------------------------------ */
+input[type="range"] {
+	/* removing default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	outline: none;
+	/*  slider progress trick  */
+	overflow: hidden;
+	border-radius: 16px;
+	height: 5px;
+}
+
+/* Track: webkit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+	background: #636363;
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+	background: #636363;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 5px;
+	width: 5px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+	box-shadow: -407px 0 0 404px rgb(255, 255, 255);
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+	height: 5px;
+	width: 5px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 1px solid #ffffff;
+	/*  slider progress trick  */
+	box-shadow: -407px 0 0 404px rgb(255, 255, 255);
+}

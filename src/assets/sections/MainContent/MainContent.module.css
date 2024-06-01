@@ -1,0 +1,15 @@
+:root {
+	--bg-gradient--topColor: #000;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 25px);
+	margin: 10px;
+	border-radius: 10px;
+	background: linear-gradient(180deg, var(--bg-gradient--topColor) 0%, rgba(18, 18, 18, 1) 40%, rgba(18, 18, 18, 1) 100%);
+	height: calc(100% - 10px);
+	overflow-y: auto;
+	transition: all 0.5s;
+}

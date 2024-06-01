@@ -1,0 +1,43 @@
+.content {
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	grid-template-rows: 20px 1fr;
+	grid-template-areas:
+		"icon title"
+		"icon detail";
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.5s;
+}
+
+.content:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.content:active {
+	background-color: black;
+}
+
+.icon {
+	grid-area: icon;
+	width: 40px;
+	border-radius: 5px;
+}
+
+.title {
+	grid-area: title;
+	font-size: 16px;
+	font-weight: var(--text-menu-weight);
+	color: var(--text-accent);
+}
+
+.detail {
+	grid-area: detail;
+	font-size: 14px;
+	height: 20px;
+}
+
+.selected {
+	color: var(--text-selected);
+}
